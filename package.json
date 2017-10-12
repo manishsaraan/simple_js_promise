@@ -1,0 +1,24 @@
+{
+  "name": "simple_js_promise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script_1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manishsaraan/simple_js_promise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manishsaraan/simple_js_promise/issues"
+  },
+  "homepage": "https://github.com/manishsaraan/simple_js_promise#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

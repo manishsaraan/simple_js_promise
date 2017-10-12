@@ -1,23 +1,25 @@
 //create simple function
+var counter = 0;
 function asyncFun(message, callback){     
      setTimeout(function(){
              console.log(message);
-             callback();
+             counter++;
+             callback(message+"_"+counter);
      },500);
 }
 
 //spliting anonymous functions with named functions to prevent callback hell
-function doStuff(){
+function doStuff(cb){
                      asyncFun('doing stuff',function(){
-                        console.log('we are done!!!');
+                        console.log('we are done!!! with cb'+cb);
                      })
                 };
 
-function validateUser(){
+function validateUser(cb){
                 asyncFun('validating user',doStuff);
            };
 
-function getUser(){
+function getUser(cb){
            asyncFun('getting user',validateUser);
 };
 
